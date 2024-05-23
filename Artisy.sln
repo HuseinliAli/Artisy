@@ -20,13 +20,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MessageQueues", "MessageQue
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityService", "IdentityService", "{66A8A61F-9318-4576-8C21-E347DEF2AC1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.API", "src\Services\IdentityService\IdentityService.API\IdentityService.API.csproj", "{64369500-96B3-4D6D-915C-C2F4BE770728}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService.API", "src\Services\IdentityService\IdentityService.API\IdentityService.API.csproj", "{64369500-96B3-4D6D-915C-C2F4BE770728}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.Business", "src\Services\IdentityService\IdentityService.Business\IdentityService.Business.csproj", "{210038F5-26CC-4033-89AB-915816DC4A66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService.Business", "src\Services\IdentityService\IdentityService.Business\IdentityService.Business.csproj", "{210038F5-26CC-4033-89AB-915816DC4A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.Data", "src\Services\IdentityService\IdentityService.Data\IdentityService.Data.csproj", "{4A68769E-F695-43E6-8AA4-D4B5616C8F67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService.Data", "src\Services\IdentityService\IdentityService.Data\IdentityService.Data.csproj", "{4A68769E-F695-43E6-8AA4-D4B5616C8F67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.Entities", "src\Services\IdentityService\IdentityService.Entities\IdentityService.Entities.csproj", "{BCE4E427-F10B-46FB-877F-9EFE8888172A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService.Entities", "src\Services\IdentityService\IdentityService.Entities\IdentityService.Entities.csproj", "{BCE4E427-F10B-46FB-877F-9EFE8888172A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CatalogService", "CatalogService", "{1E32ECB1-C1C8-4A0E-9605-1709C2363914}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService.API", "src\Services\CatalogService\CatalogService.API\CatalogService.API.csproj", "{1079A7F7-8160-4D58-87C7-A7036F667612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService.Domain", "src\Services\CatalogService\CatalogService.Domain\CatalogService.Domain.csproj", "{6FCFC3F6-5F1B-4D19-AB10-44BE1B94459F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService.Application", "src\Services\CatalogService\CatalogService.Application\CatalogService.Application.csproj", "{53EA0E74-F8AD-4D81-9C2B-F4EC93519056}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService.Infrastructure", "src\Services\CatalogService\CatalogService.Infrastructure\CatalogService.Infrastructure.csproj", "{72996CD0-7A2E-4FC7-A8E2-5C514591043B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +60,22 @@ Global
 		{BCE4E427-F10B-46FB-877F-9EFE8888172A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCE4E427-F10B-46FB-877F-9EFE8888172A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCE4E427-F10B-46FB-877F-9EFE8888172A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1079A7F7-8160-4D58-87C7-A7036F667612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1079A7F7-8160-4D58-87C7-A7036F667612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1079A7F7-8160-4D58-87C7-A7036F667612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1079A7F7-8160-4D58-87C7-A7036F667612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FCFC3F6-5F1B-4D19-AB10-44BE1B94459F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FCFC3F6-5F1B-4D19-AB10-44BE1B94459F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FCFC3F6-5F1B-4D19-AB10-44BE1B94459F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FCFC3F6-5F1B-4D19-AB10-44BE1B94459F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53EA0E74-F8AD-4D81-9C2B-F4EC93519056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EA0E74-F8AD-4D81-9C2B-F4EC93519056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EA0E74-F8AD-4D81-9C2B-F4EC93519056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EA0E74-F8AD-4D81-9C2B-F4EC93519056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72996CD0-7A2E-4FC7-A8E2-5C514591043B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72996CD0-7A2E-4FC7-A8E2-5C514591043B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72996CD0-7A2E-4FC7-A8E2-5C514591043B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72996CD0-7A2E-4FC7-A8E2-5C514591043B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +90,11 @@ Global
 		{210038F5-26CC-4033-89AB-915816DC4A66} = {66A8A61F-9318-4576-8C21-E347DEF2AC1D}
 		{4A68769E-F695-43E6-8AA4-D4B5616C8F67} = {66A8A61F-9318-4576-8C21-E347DEF2AC1D}
 		{BCE4E427-F10B-46FB-877F-9EFE8888172A} = {66A8A61F-9318-4576-8C21-E347DEF2AC1D}
+		{1E32ECB1-C1C8-4A0E-9605-1709C2363914} = {60EDFE2A-6D13-4186-8B69-2BADDBF48A8B}
+		{1079A7F7-8160-4D58-87C7-A7036F667612} = {1E32ECB1-C1C8-4A0E-9605-1709C2363914}
+		{6FCFC3F6-5F1B-4D19-AB10-44BE1B94459F} = {1E32ECB1-C1C8-4A0E-9605-1709C2363914}
+		{53EA0E74-F8AD-4D81-9C2B-F4EC93519056} = {1E32ECB1-C1C8-4A0E-9605-1709C2363914}
+		{72996CD0-7A2E-4FC7-A8E2-5C514591043B} = {1E32ECB1-C1C8-4A0E-9605-1709C2363914}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB7D0CE0-5520-4F3E-8DD7-40961DA7BFC7}

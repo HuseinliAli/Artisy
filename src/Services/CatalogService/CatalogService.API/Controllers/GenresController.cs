@@ -1,0 +1,18 @@
+﻿using CatalogService.Application.Features.Genres.Queries.GetAll;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
+
+namespace CatalogService.API.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class GenresController(IMediator mediator) : ControllerBase
+    {
+        [HttpGet]
+        public async Task<IActionResult> GetAll([FromRoute] GetAllGenresQuery request)
+        {
+            var result = await mediator.Send(request);
+            return Ok(result);
+        }
+    }
+}
