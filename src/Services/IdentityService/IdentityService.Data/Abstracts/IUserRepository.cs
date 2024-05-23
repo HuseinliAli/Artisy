@@ -1,0 +1,17 @@
+﻿using IdentityService.Entities.Concretes;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace IdentityService.Data.Abstracts
+{
+    public interface IUserRepository
+    {
+        IQueryable<User> GetWhere(Expression<Func<User, bool>> predicate = null);
+        Task AddAsync(User user);
+        Task SaveChangesAsync();
+    }
+}
