@@ -71,6 +71,18 @@
       ],
       "UpstreamPathTemplate": "/auth/{everything}",
       "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Basket/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5004
+        }
+      ],
+      "UpstreamPathTemplate": "/basket/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "DELETE", "PUT" ]
     }
   ]
 }

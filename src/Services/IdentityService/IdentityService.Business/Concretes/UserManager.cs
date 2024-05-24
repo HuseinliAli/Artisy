@@ -101,6 +101,7 @@ namespace IdentityService.Business.Concretes
             var claims = new List<Claim> {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(ClaimTypes.Name, user.FirstName),
+                new Claim(ClaimTypes.Role, Enum.GetName(typeof(Role),user.Role))
             };
             var jwtToken = new JwtSecurityToken(
                 claims: claims,
