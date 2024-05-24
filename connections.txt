@@ -1,1 +1,4 @@
-payment => 
+payment => http://localhost:5001
+identity => http://localhost:5002
+catalog => http://localhost:5003
+gateway => http://localhost:5000

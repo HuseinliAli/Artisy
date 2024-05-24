@@ -1,0 +1,6 @@
+@Gw.Web_HostAddress = http://localhost:5288
+
+GET {{Gw.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
