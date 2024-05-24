@@ -38,15 +38,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogService.Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogService.Infrastructure", "src\Services\CatalogService\CatalogService.Infrastructure\CatalogService.Infrastructure.csproj", "{72996CD0-7A2E-4FC7-A8E2-5C514591043B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Abstract", "src\MessageQueues\EventBus.Abstract\EventBus.Abstract.csproj", "{9A023604-625A-42B7-9B5D-6AC0298A95B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Abstract", "src\MessageQueues\EventBus.Abstract\EventBus.Abstract.csproj", "{9A023604-625A-42B7-9B5D-6AC0298A95B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.RabbitMQ", "src\MessageQueues\EventBus.RabbitMQ\EventBus.RabbitMQ.csproj", "{731D6272-D9C0-4EFA-AE9C-64AE779F2780}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.RabbitMQ", "src\MessageQueues\EventBus.RabbitMQ\EventBus.RabbitMQ.csproj", "{731D6272-D9C0-4EFA-AE9C-64AE779F2780}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Factory", "src\MessageQueues\EventBus.Factory\EventBus.Factory.csproj", "{38A69488-9DA1-44B7-973F-513239E9B1BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Factory", "src\MessageQueues\EventBus.Factory\EventBus.Factory.csproj", "{38A69488-9DA1-44B7-973F-513239E9B1BD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E69C6E9B-D118-4FA6-B31E-DD04B4A63672}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.RabbitMQ.Test", "tests\EventBus.RabbitMQ.Test\EventBus.RabbitMQ.Test.csproj", "{D7DAC4A7-59EF-4A8C-A789-5BA182971034}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.RabbitMQ.Test", "tests\EventBus.RabbitMQ.Test\EventBus.RabbitMQ.Test.csproj", "{D7DAC4A7-59EF-4A8C-A789-5BA182971034}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PaymentService", "PaymentService", "{41B5C0FF-2655-40D4-B0BB-4DBF13A75159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymenService.API", "src\Services\PaymentService\PaymenService.API\PaymenService.API.csproj", "{4EC24AEC-FAE4-4684-842A-69079E4F4530}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -102,6 +106,10 @@ Global
 		{D7DAC4A7-59EF-4A8C-A789-5BA182971034}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7DAC4A7-59EF-4A8C-A789-5BA182971034}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7DAC4A7-59EF-4A8C-A789-5BA182971034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EC24AEC-FAE4-4684-842A-69079E4F4530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC24AEC-FAE4-4684-842A-69079E4F4530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC24AEC-FAE4-4684-842A-69079E4F4530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EC24AEC-FAE4-4684-842A-69079E4F4530}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +133,8 @@ Global
 		{731D6272-D9C0-4EFA-AE9C-64AE779F2780} = {80701495-257D-4C35-B117-A9A44645B314}
 		{38A69488-9DA1-44B7-973F-513239E9B1BD} = {80701495-257D-4C35-B117-A9A44645B314}
 		{D7DAC4A7-59EF-4A8C-A789-5BA182971034} = {E69C6E9B-D118-4FA6-B31E-DD04B4A63672}
+		{41B5C0FF-2655-40D4-B0BB-4DBF13A75159} = {60EDFE2A-6D13-4186-8B69-2BADDBF48A8B}
+		{4EC24AEC-FAE4-4684-842A-69079E4F4530} = {41B5C0FF-2655-40D4-B0BB-4DBF13A75159}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB7D0CE0-5520-4F3E-8DD7-40961DA7BFC7}
